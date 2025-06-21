@@ -8,6 +8,9 @@ def fetch_git_sha
   # This is for Heroku. Ensure heroku labs:enable runtime-dyno-metadata is turned on.
   elsif ENV.fetch('HEROKU_SLUG_COMMIT', nil).present?
     ENV.fetch('HEROKU_SLUG_COMMIT', nil)
+  # Railway sets this environment variable with the commit SHA
+  elsif ENV.fetch('RAILWAY_GIT_COMMIT_SHA', nil).present?
+    ENV.fetch('RAILWAY_GIT_COMMIT_SHA', nil)
   else
     'unknown'
   end
