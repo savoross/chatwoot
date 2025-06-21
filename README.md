@@ -109,6 +109,14 @@ Deploying Chatwoot to Heroku is a breeze. It's as simple as clicking this button
 
 Follow this [link](https://www.chatwoot.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
 
+### Railway one-click deploy
+
+Deploying Chatwoot to Railway is just as easy. Click the button below to create a new Railway project using this repository:
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new?template=https://github.com/chatwoot/chatwoot)
+
+The environment variables listed [here](https://www.chatwoot.com/docs/environment-variables) apply to Railway deployments as well.
+
 
 ### DigitalOcean 1-Click Kubernetes deployment
 
